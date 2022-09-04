@@ -5,7 +5,7 @@ const getSnacks = async () => {
         .then(res => res.json())
         .then((data) => {
             const snacks = data.map((product) => product)
-            displayPisco(snacks)
+            displaySnacks(snacks)
         })
 }
 

@@ -5,7 +5,7 @@ const getEnergetica = async () => {
         .then(res => res.json())
         .then((data) => {
             const energetica = data.map((product) => product)
-            displayPisco(energetica)
+            displayEner(energetica)
         })
 }
 

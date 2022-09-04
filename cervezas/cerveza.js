@@ -5,7 +5,7 @@ const getCervezas = async () => {
         .then(res => res.json())
         .then((data) => {
             const cerveza = data.map((product) => product)
-            displayPisco(cerveza)
+            displayCervezas(cerveza)
         })
 }
 
