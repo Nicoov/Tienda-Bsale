@@ -1,4 +1,5 @@
-const API_URL = 'http://localhost:5000/vodka'
+const API_URL = 'http://localhost:3000/vodka'
+const vodka = document.getElementById("vodka")
 
 const getVodka = async () => {
     await fetch(API_URL)
@@ -8,6 +9,7 @@ const getVodka = async () => {
             displayVodka(vodka)
         })
 }
+
 
 
 function displayVodka(vodka) {
@@ -26,7 +28,6 @@ function displayVodka(vodka) {
     </div>
         `
     });
-
     document.getElementById('product').innerHTML = productListHTML;
 }
 

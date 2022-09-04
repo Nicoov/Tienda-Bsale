@@ -1,16 +1,16 @@
-const API_URL = 'http://localhost:5000/bebidas'
+const API_URL = 'http://localhost:3000/bebidas'
 
 const getBebida = async () => {
     await fetch(API_URL)
         .then(res => res.json())
         .then((data) => {
             const bebida = data.map((product) => product)
-            displayPisco(bebida)
+            displayBebida(bebida)
         })
 }
 
 
-function displayPisco(bebida) {
+function displayBebida(bebida) {
     let productListHTML = ''
     bebida.forEach(e => {
         productListHTML += `

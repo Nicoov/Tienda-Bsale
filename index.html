@@ -18,12 +18,22 @@
         <div class="search-box">
             <form action="">
                 <input type="text" name="search" id="srch" placeholder="busca tu producto">
-                <button type="submit"><i class="fa fa-search"></i></button>
             </form>
         </div>
         <ul>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Productos</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a id="ener" onclick="location.href='./energetica/energeticas.html'" ;>Energeticas</a></li>
+                        <li><a id="pisco" onclick="location.href='./pisco/pisco.html'">Pisco</a></li>
+                        <li><a id="ron" onclick="location.href='./ron/ron.html'">Ron</a></li>
+                        <li><a id="bebidas" onclick="location.href='./bebidas/bebida.html'">Bebidas</a></li>
+                        <li><a id="snacks" onclick="location.href='./snacks/snacks.html'">Snacks</a></li>
+                        <li><a id="cervezas" onclick="location.href='./cervezas/cervezas.html'">Cervezas</a></li>
+                        <li><a id="vodka" onclick="location.href='./vodka/vodka.html'">Vodka</a></li>
+                    </ul>
+                </div>
+            </li>
         </ul>
     </header>
     <section class="sec">
@@ -31,7 +41,7 @@
         </div>
     </section>
 
-    <script src="index.js"></script>
+    <script type="text/javascript" src="index.js"></script>
 </body>
 
 </html>

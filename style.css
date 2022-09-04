@@ -76,12 +76,53 @@ header ul li a{
     color: #fff;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 10px 15px;
+    padding: 14.5px 15px;
 }
 
 header ul li a:hover{
     border-bottom: 2px solid ;
 }
+
+
+.sub-menu-1{
+    display: none;
+}
+
+header ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background-color: #f03434;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+header ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+
+header ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+
+header ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+
+
+header ul li:hover .sub-menu-1 ul li a:hover{
+    color: #424144;
+    cursor: pointer;
+}
+
+
+
 
 
 .home-page-content {
