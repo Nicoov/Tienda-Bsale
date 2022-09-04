@@ -3,6 +3,8 @@ const API_URL = 'http://localhost:3000'
 const inputBuscar = document.getElementById('srch')
 const div = document.getElementsByClassName("card")
 
+
+// funcion que hace un fetch a la api y trae los datos en un json, despues se hace map para traer los productos 
 const getDatos = async () => {
     await fetch(API_URL)
         .then(res => res.json())
@@ -12,6 +14,7 @@ const getDatos = async () => {
         })
 }
 
+//Creacion de funcionan que contienen los elementos del dom en este caso para llamar los productos por categoria 
 const ener = document.getElementById('ener');
 const pisco = document.getElementById('pisco');
 const ron = document.getElementById('ron');
@@ -21,6 +24,7 @@ const cervezas = document.getElementById('cervezas');
 const vodka = document.getElementById('vodka');
 const index = document.getElementById('home')
 
+//funcion addEventListener para redirigir a cada una de las rutas 
 ener.addEventListener('click', function() {
     window.location.href = "/energetica/energeticas.html"
 })
@@ -51,8 +55,7 @@ vodka.addEventListener('click', function() {
 
 
 
-
-
+// Algoritmo que permite la busqueda desde el search 
 inputBuscar.addEventListener('keyup', (e) => {
     let texto = e.target.value
     let er = new RegExp(texto, 'i')
@@ -65,6 +68,8 @@ inputBuscar.addEventListener('keyup', (e) => {
         }
     }
 })
+
+// funcion que muestra los productos 
 
 function displayProduct(productos) {
     let productListHTML = ''
