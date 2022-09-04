@@ -28,4 +28,5 @@ específicos, tales como; boopstrap, material, Jquery, entre otros.
 Solamente se utilizó JavaScript vanilla para todo el frontend y además se utilizo css puro formato cascada. 
 - El frontend tiene implementado un buscador y ademas de categorización de productos.
 - Para el deploy se utilizo en netlify con el siguiente URL: https://lovely-cheesecake-c2c762.netlify.app/ron/ron.html
+- Para que funcione correctamente tiene que hacer correr el api
 
