@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000/vodka'
+const API_URL = 'http://localhost:5000/vodka'
 
 const getVodka = async () => {
     await fetch(API_URL)

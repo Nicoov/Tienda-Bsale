@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000/pisco'
+const API_URL = 'http://localhost:5000/pisco'
 
 const getPisco = async () => {
     await fetch(API_URL)
