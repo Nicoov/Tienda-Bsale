@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000/ron'
+const API_URL = 'http://localhost:3000/ron'
 
 const getRon = async () => {
     await fetch(API_URL)

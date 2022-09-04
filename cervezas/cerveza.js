@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000/cervezas'
+const API_URL = 'http://localhost:3000/cervezas'
 
 const getCervezas = async () => {
     await fetch(API_URL)
@@ -10,7 +10,7 @@ const getCervezas = async () => {
 }
 
 
-function displayPisco(cerveza) {
+function displayCervezas(cerveza) {
     let productListHTML = ''
     cerveza.forEach(e => {
         productListHTML += `

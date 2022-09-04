@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000/snacks'
+const API_URL = 'http://localhost:3000/snacks'
 
 const getSnacks = async () => {
     await fetch(API_URL)
@@ -10,7 +10,7 @@ const getSnacks = async () => {
 }
 
 
-function displayPisco(snacks) {
+function displaySnacks(snacks) {
     let productListHTML = ''
     snacks.forEach(e => {
         productListHTML += `

@@ -1,5 +1,5 @@
 const API_URL = 'http://localhost:3000/vodka'
-const vodka = document.getElementById("vodka")
+
 
 const getVodka = async () => {
     await fetch(API_URL)
