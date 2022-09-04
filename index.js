@@ -1,5 +1,5 @@
 
-const API_URL = 'http://localhost:8000'
+const API_URL = 'http://localhost:3000'
 const inputBuscar = document.getElementById('srch')
 const div = document.getElementsByClassName("card")
 
@@ -15,7 +15,6 @@ const getDatos = async () => {
 
 inputBuscar.addEventListener('keyup', (e) => {
     let texto = e.target.value
-    console.log(texto)
     let er = new RegExp(texto, 'i')
     for (let i = 0; i < div.length; i++) {
         let valor = div[i]
