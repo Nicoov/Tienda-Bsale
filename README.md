@@ -13,7 +13,7 @@ La aplicación de cliente tiene que estar desarrollada con vanilla javascript
 específicos, tales como; boopstrap, material, Jquery, entre otros.
 
 #Importante:
-- No se alcanzo a subir la api a produccion
+- No se alcanzo a subir la api a producción
 - El codigo del frontend se encuentra en este repositorio
 - El código del backend se encuentra en el siguiente repositorio: https://github.com/Nicoov/BackendBsale
 
